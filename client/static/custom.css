@@ -1,0 +1,60 @@
+.page-header {
+/*	background-color: #cceeff;*/
+	text-align: center;
+	margin: 0px;
+	padding: 30px;
+}
+#products, #productsPage, #ordersPage, #customersPage {
+	margin-top: 25px;
+}
+#dashboardProducts {
+	width: 33%;
+	float: left;
+	margin-bottom: 30px;
+}
+.btn-primary {
+	display: block;
+}
+#dashboardProducts img {
+	width: 150px;
+	height: 150px;
+}
+#allProducts {
+	width: 33%;
+	float: left;
+	margin-bottom: 60px;
+}
+#allProducts img {
+	width: 150px;
+	height: 150px;
+}
+#ordersPage h3 {
+	text-align: center;
+}
+#orderForm {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+#ordersPage input {
+	float: right;
+}
+#existingOrders {
+	margin-left: auto;
+	margin-right: auto;
+}
+#customersPage input {
+	float: right;
+}
+#customersPage h3 {
+	text-align: center;
+}
+#addCustomerForm {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+#existingCustomers {
+	margin-left: auto;
+	margin-right: auto;
+}

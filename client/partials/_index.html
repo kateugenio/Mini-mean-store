@@ -1,0 +1,34 @@
+<div class="row" id="products">
+	<div class="col-md-2">
+		<input type="text" ng-model="filter" placeholder="filter products...">
+	</div>
+	<div class="col-md-10">
+		<div id="dashboardProducts" ng-repeat="product in products | filter:filter">
+			<p>{{product.name}}</p>
+  			<p><span class="badge">{{product.quantity}}</span> left</p>
+			<img ng-src="{{product.imageUrl}}">
+		</div>
+		<a href="#/products">Show More</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-10">
+		<h3>Recent Orders</h3>
+		<legend></legend>
+		<ul ng-repeat="order in orders">
+			<li>{{order._customer.name}} ordered {{order.quantity}} {{order._product.name}}</li>
+		</ul>
+		<a href="#/orders">Show More</a>
+
+		<h3>New Customers</h3>
+		<legend></legend>
+		<ul ng-repeat="customer in customers">
+			<li>{{customer.name}} joined the store on {{customer.createdAt | date: 'MM-dd-yyyy hh:mm:ss'}}</li>
+		</ul>
+		<a href="#/customers">Show More</a>
+	</div>
+</div>
+
+
