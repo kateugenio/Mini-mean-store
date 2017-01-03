@@ -1,6 +1,6 @@
 var App = angular.module('StoreModule', ['ngRoute']);
 
-App.config(function($routeProvider){
+App.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
       templateUrl: '/partials/_index.html',
@@ -18,5 +18,9 @@ App.config(function($routeProvider){
       templateUrl: '/partials/_order.html',
       controller: 'OrderController'
     })
-    .otherwise('/')
+    .otherwise('/');
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 })
