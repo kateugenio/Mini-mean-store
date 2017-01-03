@@ -19,4 +19,5 @@ App.config(function($routeProvider, $locationProvider){
       controller: 'OrderController'
     })
     .otherwise('/');
+    $locationProvider.html5Mode(false).hashPrefix('');
 })
