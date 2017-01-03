@@ -14,7 +14,7 @@ App.controller('CustomerController', function($scope, CustomerFactory, $location
 	getCustomers();
 
 	$scope.createCustomer = function(){
-		CustomerFactory.createCustomer($scope.newCustomer)
+		CustomerFactory.createCustomer($scope.$parent.newCustomer)
 		.then(function(response){
 			$scope.newCustomer = '';
 			getCustomers();

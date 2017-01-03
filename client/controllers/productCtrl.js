@@ -12,7 +12,7 @@ App.controller('ProductController', function($scope, ProductFactory, $location){
 	getProducts();
 
 	$scope.addProduct = function(){
-		ProductFactory.addProduct($scope.newProduct)
+		ProductFactory.addProduct($scope.$parent.newProduct)
 		.then(function(response){
 			$scope.newProduct = '';
 			getProducts();

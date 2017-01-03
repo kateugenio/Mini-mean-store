@@ -4,15 +4,15 @@
 
 	<form ng-submit="order()" id="orderForm">
 		<label>Customer</label>
-		<select class="form-control" ng-model="newOrder._customer">
+		<select class="form-control" ng-model="$parent.newOrder._customer">
 			<option ng-repeat="customer in customers" value="{{customer._id}}">{{customer.name}}</option>
 		</select>
 		<label>Product</label>
-		<select class="form-control" ng-model="newOrder._product">
+		<select class="form-control" ng-model="$parent.newOrder._product">
 			<option ng-repeat="product in products" value="{{product._id}}">{{product.name}}</option>
 		</select>
 		<label>Quantity</label>
-		<select class="form-control" ng-model="newOrder.quantity">
+		<select class="form-control" ng-model="$parent.newOrder.quantity">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>

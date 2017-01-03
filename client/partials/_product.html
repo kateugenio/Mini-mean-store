@@ -4,16 +4,16 @@
 		<h3>Add a new Product</h3>
 		<form ng-submit="addProduct()">
 		  <div class="form-group">
-		    <input type="text" class="form-control" placeholder="Name" ng-model="newProduct.name">
+		    <input type="text" class="form-control" placeholder="Name" ng-model="$parent.newProduct.name">
 		  </div>
 		  <div class="form-group">
-		    <input type="text" class="form-control" placeholder="Image (url)" ng-model="newProduct.imageUrl">
+		    <input type="text" class="form-control" placeholder="Image (url)" ng-model="$parent.newProduct.imageUrl">
 		  </div>
 		  <div class="form-group">
-		    <input type="text" class="form-control" placeholder="Description" ng-model="newProduct.description">
+		    <input type="text" class="form-control" placeholder="Description" ng-model="$parent.newProduct.description">
 		  </div>
 		  <div class="form-group">
-		    <input type="text" class="form-control" placeholder="Quantity" ng-model="newProduct.quantity">
+		    <input type="text" class="form-control" placeholder="Quantity" ng-model="$parent.newProduct.quantity">
 		  </div>
 		  <button type="submit" class="btn btn-default">Create</button>
 		</form>

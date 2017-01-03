@@ -35,7 +35,7 @@ App.controller('OrderController', function($scope, ProductFactory, CustomerFacto
 
 	$scope.order = function(){
 		console.log($scope.newOrder);
-		OrderFactory.order($scope.newOrder)
+		OrderFactory.order($scope.$parent.newOrder)
 		.then(function(response){
 			console.log(response.data);
 			if (response.data === "Sorry, we could not process your order, please check the Products page to view the quanitity available of the product you are trying to order"){
