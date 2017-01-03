@@ -8,7 +8,7 @@
   			<p><span class="badge">{{product.quantity}}</span> left</p>
 			<img ng-src="{{product.imageUrl}}">
 		</div>
-		<a href="/#/products">Show More</a>
+		<a href="#/products">Show More</a>
 	</div>
 </div>
 <div class="row">
@@ -20,14 +20,14 @@
 		<ul ng-repeat="order in orders">
 			<li>{{order._customer.name}} ordered {{order.quantity}} {{order._product.name}}</li>
 		</ul>
-		<a href="/#/orders">Show More</a>
+		<a href="#/orders">Show More</a>
 
 		<h3>New Customers</h3>
 		<legend></legend>
 		<ul ng-repeat="customer in customers">
 			<li>{{customer.name}} joined the store on {{customer.createdAt | date: 'MM-dd-yyyy hh:mm:ss'}}</li>
 		</ul>
-		<a href="/#/customers">Show More</a>
+		<a href="#/customers">Show More</a>
 	</div>
 </div>
 
