@@ -19,8 +19,6 @@ App.config(function($routeProvider, $locationProvider){
       controller: 'OrderController'
     })
     .otherwise('/');
-    $locationProvider.html5Mode({
-        enabled: true
-    });
+    $locationProvider.html5Mode(false);
     $locationProvider.hashPrefix('!');
 })
