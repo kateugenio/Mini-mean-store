@@ -5,7 +5,8 @@ var mongoose = require('mongoose'),
     models_path = path.join( __dirname, "../models");
 
 // connect
-mongoose.connect( 'mongodb://localhost/minimeanstore' );
+mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect( 'mongodb://localhost/minimeanstore' );
 // load any models
 
 fs.readdirSync( models_path ).forEach( function( file ) {
