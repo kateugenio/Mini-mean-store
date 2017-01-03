@@ -20,7 +20,7 @@ App.config(function($routeProvider, $locationProvider){
     })
     .otherwise('/');
     $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
+        enabled: true
     });
+    $locationProvider.hashPrefix('!');
 })
