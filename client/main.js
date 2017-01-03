@@ -18,7 +18,4 @@ App.config(function($routeProvider){
       templateUrl: '/partials/_order.html',
       controller: 'OrderController'
     })
-    .otherwise({
-      redirectTo: '/'
-    })
 })
